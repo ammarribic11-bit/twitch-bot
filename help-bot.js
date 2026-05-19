@@ -35,7 +35,7 @@ const commands = [
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
 ];
 
-const rest = new REST({ version: '1000' }).setToken(process.env.TOKEN);
+const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 
 client.on('ready', async () => {
     console.log(`${client.user.tag} is online!`);
